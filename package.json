@@ -1,0 +1,23 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "Ecommerce mern stack app.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mathew-Pearce/proshop.git"
+  },
+  "author": "Mathew Pearce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mathew-Pearce/proshop/issues"
+  },
+  "homepage": "https://github.com/Mathew-Pearce/proshop#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
