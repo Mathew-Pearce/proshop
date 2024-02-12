@@ -2,7 +2,9 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button, ListGroupItem } from "react-bootstrap";
 import Rating from "../components/Rating";
+import Loader from "../components/Loader";
 import { useGetProductDetailsQuery } from "../slices/productsApiSlice";
+import Message from "../components/Message";
 const ProductScreen = () => {
   const { id: productId } = useParams();
 
@@ -11,9 +13,9 @@ const ProductScreen = () => {
     <>
       <Link to='/'>Go back</Link>
       {isLoading ? (
-        <h2>loading!...</h2>
+        <Loader />
       ) : error ? (
-        <div>{error?.data?.message || error.error}</div>
+        <Message varient='danger'>{error?.data?.message || error.error}</Message>
       ) : (
         <Row>
           <Col md={5}>
