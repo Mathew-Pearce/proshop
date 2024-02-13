@@ -8,7 +8,13 @@ const Footer = () => {
       <Container>
         <Row>
           <Col className='text-center py-3'>
-            <p>ProShop &copy; {currentDate}</p>
+            <p>
+              ProShop: built by NodeOutMedia &copy; {currentDate}{" "}
+              <a href='https://www.nodeoutmedia.com/'>nodeoutmedia.com</a>
+            </p>
+            <p>
+              Want a webite like this? <a href='https://www.nodeoutmedia.com/'>Click here</a>
+            </p>
           </Col>
         </Row>
       </Container>
